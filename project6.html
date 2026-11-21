@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>School Library Book Donation Form</title>
+</head>
+
+<body>
+
+    <h1>School Library Book Donation Form</h1>
+
+    <p>
+        Help our school library grow!
+        Fill out the form below to donate books.
+    </p>
+
+    <hr>
+
+    <form>
+
+        <!-- Donor Information -->
+        <h2>Donor Information</h2>
+
+        <label>Full Name:</label><br>
+        <input type="text" name="fullname"
+               placeholder="Enter your name" required>
+        <br><br>
+
+        <label>Email Address:</label><br>
+        <input type="email" name="email"
+               placeholder="Enter your email" required>
+        <br><br>
+
+        <label>Phone Number:</label><br>
+        <input type="tel" name="phone"
+               placeholder="Enter phone number">
+        <br><br>
+
+        <!-- Book Information -->
+        <h2>Book Information</h2>
+
+        <label>Book Title:</label><br>
+        <input type="text" name="booktitle"
+               placeholder="Enter book title" required>
+        <br><br>
+
+        <label>Author Name:</label><br>
+        <input type="text" name="author"
+               placeholder="Enter author name">
+        <br><br>
+
+        <label>Book Category:</label><br>
+
+        <select name="category">
+            <option value="">Select Category</option>
+            <option>Story Books</option>
+            <option>Science</option>
+            <option>Mathematics</option>
+            <option>History</option>
+            <option>Computer</option>
+            <option>Other</option>
+        </select>
+
+        <br><br>
+
+        <label>Number of Books:</label><br>
+        <input type="number" name="quantity"
+               min="1" max="100">
+        <br><br>
+
+        <!-- Book Condition -->
+        <h2>Book Condition</h2>
+
+        <input type="radio" name="condition"
+               value="New">
+        <label>New</label>
+
+        <br>
+
+        <input type="radio" name="condition"
+               value="Good">
+        <label>Good</label>
+
+        <br>
+
+        <input type="radio" name="condition"
+               value="Used">
+        <label>Used</label>
+
+        <br><br>
+
+        <!-- Additional Information -->
+        <h2>Additional Information</h2>
+
+        <label>Why do you want to donate books?</label>
+        <br>
+
+        <textarea name="message"
+                  rows="5"
+                  cols="40"
+                  placeholder="Write your message here...">
+        </textarea>
+
+        <br><br>
+
+        <input type="checkbox" name="agreement"
+               required>
+        <label>
+            I confirm that I want to donate these books.
+        </label>
+
+        <br><br>
+
+        <!-- Buttons -->
+        <input type="submit" value="Submit Donation">
+
+        <input type="reset" value="Clear Form">
+
+    </form>
+
+    <hr>
+
+    <h3>Thank You for Supporting Our Library!</h3>
+
+    <p>Every book can make a difference.</p>
+
+</body>
+</html>
